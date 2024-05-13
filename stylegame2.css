@@ -1,0 +1,113 @@
+*{
+    margin: 10px;
+    padding:0px;
+}
+#a {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#words {
+    width: 85%;
+    height: 10vh;
+    font-size: 2em;
+    position: fixed;
+    /* bottom: 0; */
+    top: 85vh;
+}
+#submitt {
+    width: 14%;
+    height: 10vh;
+    font-size: 2em;
+    position: fixed;
+    top: 85vh;
+    right: 0;
+}
+#fowl {
+    float: right;
+    margin-right: 5vw;
+}
+#mowl {
+    margin-left: 5vw;
+}
+#output {
+    text-align: center;
+}
+.speech-bubble {
+    position: relative;
+    background: #00aabb;
+    border-radius: .4em;
+    width: 25%;
+    /* height: 10vh; */
+    text-align: center;
+    padding: 5vh;
+}
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-bottom-color: #00aabb;
+    border-top: 0;
+    border-left: 0;
+    margin-left: -10px;
+    margin-top: -20px;
+}
+.speech-bubble1 {
+    float: right;
+    position: relative;
+    background: #00aabb;
+    border-radius: .4em;
+    width: 25%;
+    text-align: center;
+    padding: 5vh;
+    top: -20vh;
+}
+
+.speech-bubble1:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-bottom-color: #00aabb;
+    border-top: 0;
+    border-right: 0;
+    margin-left: -10px;
+    margin-top: -20px;
+}
+#speech {
+    display: inline-block;
+    width: 100vw;
+    /* height: 100vh; */
+}
+#background {
+    display:flex;
+    z-index: 1000;
+    background-color: #008f9c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+#inst {
+    color: white;
+    text-align: center;
+}
+#skip {
+    float:right;
+    width: 100px;
+    height: 50px;
+    margin-right: 10px;
+}
+#video {
+    margin-left: 50px;
+}
