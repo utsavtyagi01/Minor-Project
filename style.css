@@ -1257,7 +1257,7 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: start;
+    align-items: center;
 
 }
 
@@ -1325,3 +1325,94 @@ p{
 .rev_para {
     width: 55vw;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+.sign_up_btn {
+    margin: 0 20px;
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 1em;
+}
+
+.sign_out {
+    display: none;
+}
+
+.sign_up_btn:hover {
+    background-color: var(--primary);
+    color: black;
+}
+
+
+
+
+
+.sign_up_btn_contrast {
+    background-color: var(--primary);
+    border: 2px solid black;
+    color: black;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 1em;
+}
+
+.sign_up_btn_contrast:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+.sign_up_btn_plane {
+    background-color: var(--primary);
+    color: black;
+    font-weight: 530;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 1em;
+}
+
+.sign_up_btn_plane:hover {
+    font-weight: normal;
+    background-color: black;
+    color: white;
+}
+
+
+
+.btn_transition {
+    transition: all;
+    transition-duration: 0.6s;
+    transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+    transition-delay: 0s;
+}
+
+
+
+
+
+   
+    .sign_up_btn_plane {
+        margin-left: 20px;
+    }
+
+  
+
+    .sign_up_btn_container {
+        margin: 0 40px;
+    }
