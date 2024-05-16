@@ -24,7 +24,7 @@
                 <li><a href="#about">About</a></li>
                 <!--<li><a href="#test">Take Test</a></li>-->
                 <li><a href="#article">What We Do</a></li>
-                <li><a href="#article">Join Us</a></li>
+                <li><a href="login.html" >Join Us</a></li>
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
         </div>
@@ -267,6 +267,7 @@
         </div>
 </section>
     <!-- New Section :- Get started with Brightline today -->
+    <br id="join">
     <h2 id="getStartedHeading">Get started with Fertilisense today</h2>
     <br><br><br><br>
     <div id="getStartedDiv">
@@ -279,7 +280,8 @@
                 <br><br>
                 <div><p>Get support for changing the ecosystem of farming.</p></div>
                 <br><br>
-                <button>Join now</button>
+                <button >
+                    <a href="login.html">Join Now</a></button>
             </div>
         </div>
         <!--
@@ -331,6 +333,39 @@
             <a class="privacy">© Fertlisense. All Rights Reserved. 2023</a>
         </div>
     </div>
+    <script>
+        // Function to handle login/logout
+        function handleLogin() {
+            var joinUsBtn = document.getElementById('joinUsBtn');
+            var isLoggedIn = localStorage.getItem('isLoggedIn');
+    
+            if (isLoggedIn === 'true') {
+                // If logged in, change button text to 'Sign Out'
+                joinUsBtn.textContent = 'Sign Out';
+                // Add logout functionality here (e.g., redirect to logout page)
+            } else {
+                // If not logged in, redirect to login page
+                joinUsBtn.textContent = 'Join Us';
+                joinUsBtn.href = 'login.html';
+            }
+        }
+    
+        // Check login state when the page loads
+        window.addEventListener('load', handleLogin);
+    
+        // Event listener for clicking the 'Join Us' / 'Sign Out' button
+        document.getElementById('joinUsBtn').addEventListener('click', function(e) {
+            e.preventDefault(); // Prevent default behavior of the link
+            var isLoggedIn = localStorage.getItem('isLoggedIn');
+    
+            if (isLoggedIn === 'true') {
+                // If logged in, perform logout actions
+                localStorage.setItem('isLoggedIn', 'false');
+                handleLogin(); // Update button text
+                // Add logout functionality here
+            }
+        });
+    </script>
     
 </body>
 </html>
